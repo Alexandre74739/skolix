@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0d0020;
+  --foreground: #ffffff;
+  --color-purple: #a855f7;
+  --color-yellow: #f5c518;
+  --color-pink: #ec4899;
+  --gradient-brand: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+  --color-badge-green: #4ade80;
+  --color-badge-orange: #fb923c;
+  --color-badge-yellow: #facc15;
+  --color-badge-cyan: #22d3ee;
+  --color-particle-1: #facc15;
+  --color-particle-2: #fb923c;
+  --color-particle-3: #ec4899;
+  --color-particle-4: #22d3ee;
+  --color-particle-5: #4ade80;
+  --font-primary: "Fredoka", sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-primary);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-primary);
+}
